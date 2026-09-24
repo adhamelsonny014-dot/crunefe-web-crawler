@@ -1,0 +1,14 @@
+# Core requirements
+requests
+beautifulsoup4
+pandas
+matplotlib
+streamlit
+playwright
+aiohttp
+retrying
+asyncio
+python-dateutil
+
+# Installation note for Playwright
+# After installing requirements, run: playwright install
