@@ -145,7 +145,6 @@ The final score is kept between 0 and 100 and interpreted as:
 ## Known limitations
 
 - The extractor's CSS selectors target Reuters' current HTML. If Reuters changes its markup, update the `SELECTORS` dictionary at the top of `extractor.py`.
-- The dashboard option in `main.py` launches Streamlit from a hard-coded path (`dashboard_path`). Change it to `"dashbo.py"` before using menu option 3 on your machine.
 - The CLI clears the screen with `cls`, so it's designed for Windows terminals.
 - Respect each site's terms of service and `robots.txt` when crawling.
 

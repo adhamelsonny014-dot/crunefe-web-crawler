@@ -85,7 +85,7 @@ if __name__ == "__main__":
             uni = input("Enter you website address")
             if flag == True:
                 print("📄 Loading extractor...")
-                mainy()
+                mainy(uni)
                 input("\n Press Enter when you're done reading")
             else:
                 print("\n We recommend you to analyze the link first to check the coed of crawlability :) ")
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         
         elif choice == "3":
             print("⚙️ Opening Dashboard..")
-            dashboard_path = "E:/College Work 3rd year/Semester 2/Information Retrieval/Project/final project IR/dashbo.py"  # replace if your dashboard file has a different name
+            dashboard_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dashbo.py")
             subprocess.run(["python", "-m", "streamlit" ,"run", dashboard_path])
             input("\n Press Enter when you're done reading")
             
